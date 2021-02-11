@@ -20,4 +20,13 @@ def temperature():
   str_current_city = requests.args.get('Current city')
   r = requests.get(str_base_url + 'weather?q='+str_current_city+'&units=imperial&appid='+str_api_key+'')
   return r.json()
-  
+
+@app.route('/forecast', methods=['GET'])
+@cross_origin()
+def forecast():
+  str_current_city = requests.args.get('Current city')
+  r = requests.get(str_base_url + 'forecast?q='+str_current_city+'&units=imperial&appid='+str_api_key+'')
+  return r.json()
+
+if __name__ == '__main__':
+  app.run(debug=True)
