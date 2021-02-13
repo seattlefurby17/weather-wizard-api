@@ -18,16 +18,6 @@ def index():
 @cross_origin()
 def temperature(r):
   str_current_city = request.args.get('Current city')
-
-# response = {}
-#   # Check if user sent a city name at all
-# if not str_current_city:
-#   response["ERROR"] = "no city found, please enter a city."
-# # Check if the user entered a number not a city
-# elif str(str_current_city).isdigit():
-#   response["ERROR"] = "City's name can't be numeric."
-# # Now the user entered a valid name
-# else:
   r = requests.get(str_base_url + 'weather?q='+str_current_city+'&units=imperial&appid='+str_api_key+'')
   
   return r.json()
