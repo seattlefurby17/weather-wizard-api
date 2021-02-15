@@ -17,7 +17,7 @@ def index():
 @app.route('/temperature', methods=['GET'])
 @cross_origin()
 def temperature():
-  str_current_city = request.args.get('Current city')
+  str_current_city = request.args.get('currentCity')
   r = requests.get(str_base_url + 'weather?q='+str_current_city+'&units=imperial&appid='+str_api_key+'')
   
   return r.json()
@@ -25,7 +25,7 @@ def temperature():
 @app.route('/forecast', methods=['GET'])
 @cross_origin()
 def forecast():
-  str_current_city = request.args.get('Current city')
+  str_current_city = request.args.get('currentCity')
   r = requests.get(str_base_url + 'forecast?q='+str_current_city+'&units=imperial&appid='+str_api_key+'')
   return r.json()
 
