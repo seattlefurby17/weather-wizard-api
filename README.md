@@ -9,6 +9,7 @@ Next, you need to obtain your API key by sign up for a free account at https://o
 
 $ touch .env and put your API key in the file and name it API_KEY
 $ touch .gitignore and paste the following template 
+
 https://github.com/github/gitignore/blob/master/Python.gitignore
 
 You can star the project after clone and complete the instruction for the project's frontend at 
