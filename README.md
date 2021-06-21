@@ -1,5 +1,8 @@
 # weather-wizard-api
-After you clone the project, cd into the project dir and runs the following command in your terminal
+You can star the project after clone and complete the instruction for the project's frontend at 
+https://github.com/seattlefurby17/weather-wizard
+
+After you clone this repo, cd into the project dir and runs the following command in your terminal
 
 $ python3 -m venv venv # this will create a virtual environment
 $ source venv/bin/activate # activate the virtual environment
@@ -12,5 +15,3 @@ $ touch .gitignore and paste the following template
 
 https://github.com/github/gitignore/blob/master/Python.gitignore
 
-You can star the project after clone and complete the instruction for the project's frontend at 
-https://github.com/seattlefurby17/weather-wizard
