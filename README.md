@@ -1,4 +1,5 @@
 This is a lightweight weather web app with the following tech stack:
+
 Frontend: React JavaScript
 
 Backend: Flask Python
