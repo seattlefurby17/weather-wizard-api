@@ -1,3 +1,9 @@
+This is a lightweight weather web app with the following tech stack:
+Frontend: React JavaScript
+Backend: Flask Python
+API: Fetch & Axios @ openweathermap.org
+Deployment: GitHub-Pages and Heroku
+
 # weather-wizard-api
 You can star the project after clone and complete the instruction for the project's frontend at 
 https://github.com/seattlefurby17/weather-wizard
